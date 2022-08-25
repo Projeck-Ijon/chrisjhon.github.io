@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -13,11 +14,18 @@
     <!-- MyCSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- GSAP -->
+    
+    <!-- <script src="gsap-public/minified/gsap.min.js"></script> -->
+
     <title>My Portfolio | Chrisjhon</title>
 
-    <style></style>
+   
   </head>
-  <body id="home">
+  <body >
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm ">
       <div class="container">
@@ -48,9 +56,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/img.jpg" alt="Chrisjhon" width="200px" class="roun ded-circle img-thumbnail" />
+      <img  src="img/img.jpg" alt="Chrisjhon" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Chrisjhon</h1>
-      <p class="lead">Sarjana Teknik Informatika</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -63,7 +71,7 @@
 
     <!-- About -->
     <section id="About">
-      <div class="container">
+      <div class="container" data-aos="fade-down"  data-aos-offset="300" >
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
@@ -95,7 +103,7 @@
           </div>
           <div class="row justify-content-center mb-3">
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500">
                 <img src="img/projects/1.jpg" height="300px" class="card-img-top" alt="Projects 1" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -103,7 +111,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="200">
                 <img src="img/projects/2.jpg" height="300px" class="card-img-top" alt="Projects 2" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -111,7 +119,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="400">
                 <img src="img/projects/3.jpg" height="300px" class="card-img-top" alt="Projects 3" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -119,7 +127,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="600">
                 <img src="img/projects/4.jpg" height="300px" class="card-img-top" alt="Projects 4" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -127,7 +135,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="800">
                 <img src="img/projects/5.jpg" height="300px" class="card-img-top" alt="Projects 5" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -147,6 +155,71 @@
     </section>
     <!-- Akhir Projects -->
 
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/1.jpg" alt="Gambar 1" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/2.jpg" alt="Gambar 2" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/3.jpg" alt="Gambar 3" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/4.jpg" alt="Gambar 4" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/5.jpg" alt="Gambar 5" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/6.jpg" alt="Gambar 6"  class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/7.jpg" alt="Gambar 7" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/8.jpg" alt="Gambar 8" width="300px" height="300px" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/9.jpg" alt="Gambar 9" class="img-fluid gallery-img">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <img src="img/gallery/thumbnail/10.jpg" alt="Gambar 10" class="img-fluid gallery-img">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
+
     <!-- Contacts -->
     <section id="Contacts">
       <div class="container">
@@ -160,27 +233,26 @@
                 <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.           
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
-                <form name="my-contact-form">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Nama Lengkap</label>
-                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">                      
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-                    </div> 
-                    <div class="mb-3">
-                        <label for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-                      <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                        Loading...
-                      </button>
-                    </div>
-                  
-                  </form>
+              <form name="my-contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">                      
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                </div> 
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -194,9 +266,39 @@
         <p>Created With <i class="bi bi-heart-fill text-danger"></i></i> By <a href="https://www.instagram.com/chrisjhon_ijon/" class="text-white fw-bold">Chrisjhon</a></p>
     </footer>
 
+
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+      const gallerys = document.querySelectorAll('.gallery-img')
+
+      gallerys.forEach((img, i)=>{
+        img.dataset.aos ='fade-down'
+        img.dataset.aosDelay=i*100
+        img.dataset.aosDuration=1000
+      })
+
+      AOS.init({
+        once: true,
+        duration: 2000
+      });
+    </script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
+    
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration:3, delay: 0.5, text:'Sarjana Teknik Informatika'})
+      gsap.from('.jumbotron img', {duration:1,y:-100,rotateY:360,opacity:0})
+      gsap.from('.navbar', {duration:1.5, y:'-100%', opacity:0, ease:"bounce"})
+      gsap.from('.display-4', {duration:1.5, x:-50, opacity:0, ease:'back'})
+    </script>
+
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyOhT4fedYDQaeQyCq8MPhB2kKuTolDU26JgjDSr9VK46VwpYuYJuKDiKr1E8IspIBE/exec'
       const form = document.forms['my-contact-form']
@@ -205,8 +307,6 @@
       const btnLoading = document.querySelector('.btn-loading')
       const myAlert = document.querySelector('.my-alert')
 
-      
-    
       form.addEventListener('submit', e => {
         //ketika tombol submit di klik 
         //tampilkan tombol loading, hilangkan tombol kirim
